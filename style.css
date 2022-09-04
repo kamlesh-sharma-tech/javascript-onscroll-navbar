@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#scrollTop{
+    position: fixed;
+    right: -200px;
+    bottom: 20px;
+    background-color: blueviolet;
+    padding: 8px 14px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 4px;
+    z-index: 100;
+    transition: all 1s;
+    
+    /* pointer-events: none; */
+}
+#scrollTop[title]{
+    border-color: brown;
+}
+#scrollTop.scroll_show{
+    right: 20px;
+    /* transition: all .5s; */
+    visibility: visible;
+    opacity: 1;
+}
+#menu-area{
+    width: 100%;
+    padding: 0 60px;
+    /* background-color: antiquewhite; */
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+    /* transition: all 0.2s; */
+    transition: all .5s;
+
+}
+/* #menu-area input{
+    width: 20px;
+    height: 20px;
+    padding: 10px; 
+    position: fixed; 
+ justify-content: center; 
+} */
+#menu-area input:focus{
+    color: rgb(9, 243, 48);
+}
+#menu-area.menu_class{
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    /* position: fixed;
+    top: 0; */
+    /* transition: all .5s ease-out; */
+}
+#menu-area.menu_class ul li a{
+    color: #000;
+}
+#menu-area .logo img{
+    height: 70px;
+    padding-top: 10px;
+}
+#menu-area ul{
+    /* float: right; */
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#menu-area ul li{
+    list-style: none;
+    /* margin-left: 10px; */
+}
+#menu-area ul li a{
+    text-decoration: none;
+   color: rgb(235, 236, 232);
+   font-family: roboto;
+   font-size: larger;
+   font-family: 'Montserrat', sans-serif;
+}
+#banner-area{
+    
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/laptop.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+}
+#banner-area .banner-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-align: center;
+}
+.banner-text h1{
+    color: rgb(6, 202, 228);
+    font-size: 60px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.banner-text p{
+    font-size: 20px;
+    font-family: sans-serif;
+}
